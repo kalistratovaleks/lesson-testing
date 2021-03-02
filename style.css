@@ -128,5 +128,7 @@ header nav.navigation .nav-link:hover::after {
   line-height: 25px;
   text-align: center;
   color: #999999;
+  background-color: blue;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
