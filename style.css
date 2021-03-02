@@ -58,7 +58,8 @@ header nav.navigation .nav-link:hover::after {
 
 #main {
   height: 900px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/Rectangle.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/Rectangle.jpg);
   position: relative;
   top: -100px;
 }
@@ -128,5 +129,5 @@ header nav.navigation .nav-link:hover::after {
   text-align: center;
   color: #999999;
 }
-
+// coment
 /*# sourceMappingURL=style.css.map */
