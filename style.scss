@@ -1,0 +1,126 @@
+@import "reset";
+
+$primary: #4985ff;
+$white: #fff;
+$black: #000;
+$dark: #323232;
+$grey: #999999;
+$fs: 16px;
+$baseAlign: center;
+
+@mixin flex($justify: flex-start) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
+@mixin mainCol {
+  width: 1100px;
+  margin: 0 auto;
+}
+// header styles
+header {
+  height: 100px;
+  border-bottom: 1px solid #a1a1a180;
+  z-index: 2;
+  position: relative;
+  @include flex(center);
+  nav.navigation {
+    @include flex(flex-end);
+    @include mainCol();
+    .nav-link {
+      position: relative;
+      color: $white;
+      font-weight: 500;
+      font-size: $fs;
+      line-height: $fs * 1.25;
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 2px;
+          width: calc(100% + 40px);
+          left: -20px;
+          bottom: -39px;
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+// first section
+#main {
+  height: 900px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/Rectangle.jpg);
+  position: relative;
+  top: -100px;
+}
+#small_text {
+  position: absolute;
+  width: 175px;
+  height: 20px;
+  margin-left: 665px;
+  margin-top: 319px;
+  color: $white;
+  font-size: $fs;
+}
+#big_text {
+  position: absolute;
+  width: 829px;
+  height: 111px;
+  margin-left: 365px;
+  margin-top: 359px;
+  color: $white;
+  font-size: $fs * 3;
+  font-weight: 800;
+  line-height: $fs * 4;
+  text-align: center;
+}
+.our_projects {
+  position: absolute;
+  width: 200px;
+  height: 45px;
+  margin-left: 655px;
+  margin-top: 520px;
+  background: #4985ff;
+  border-radius: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $fs;
+  line-height: $fs + 4;
+  text-align: center;
+  color: $white;
+}
+
+// behind the first section
+#mobapp {
+  position: absolute;
+  width: 739px;
+  height: 88px;
+  margin-left: 420px;
+  margin-top: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: $fs * 3 + 5;
+  text-align: center;
+  color: $black;
+}
+#sometext {
+  position: absolute;
+  width: 730px;
+  height: 41px;
+  margin-left: 430px;
+  margin-top: 150px;
+  font-size: $fs;
+  line-height: $fs + 9px;
+  text-align: center;
+  color: $grey;
+}
